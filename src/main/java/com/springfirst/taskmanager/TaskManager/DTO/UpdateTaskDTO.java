@@ -1,23 +1,11 @@
 package com.springfirst.taskmanager.TaskManager.DTO;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+public class UpdateTaskDTO {
+    String description;
+    String deadline;
+    Boolean status;
 
-public class CreateTaskDTO {
-    private String title;
-    private String description;
-    private String deadline;
-
-    public CreateTaskDTO() {
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public UpdateTaskDTO() {
     }
 
     public String getDescription() {
@@ -34,5 +22,13 @@ public class CreateTaskDTO {
 
     public void setDeadline(String deadline) {
         this.deadline = deadline;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 }
